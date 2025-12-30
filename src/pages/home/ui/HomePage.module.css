@@ -177,7 +177,7 @@
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 48px 16px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -255,7 +255,7 @@
 
 @media (min-width: 1024px) {
   .hero {
-    padding: 96px 32px;
+    padding: 48px 32px;
   }
   
   .heroTitle {
@@ -273,7 +273,7 @@
 .dataEngineering {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 0;
+  padding: 48px 16px;
   position: relative;
   z-index: 1;
 }
@@ -393,7 +393,7 @@
 
 @media (min-width: 640px) {
   .dataEngineering {
-    padding: 64px 32px;
+    padding: 48px 32px;
   }
   
   .sectionTitle {
@@ -404,11 +404,21 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: stretch;
   }
+  
+  .dataEngineeringButtons {
+    flex-direction: row;
+  }
+  
+  .dataEngineeringButtons .btnOutline,
+  .dataEngineeringButtons .btnPrimary {
+    width: auto;
+    min-width: 200px;
+  }
 }
 
 @media (min-width: 1024px) {
   .dataEngineering {
-    padding: 96px 32px;
+    padding: 48px 32px;
   }
   
   .sectionTitle {
@@ -425,7 +435,7 @@
 .dataAnalytics {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 16px;
+  padding: 48px 16px;
   position: relative;
   z-index: 1;
 }
@@ -465,11 +475,18 @@
   margin-top: 48px;
 }
 
+@media (max-width: 768px) {
+  .dataEngineeringButtons {
+    flex-direction: column;
+  }
+}
+
 .dataEngineeringButtons .btnOutline,
 .dataEngineeringButtons .btnPrimary {
   padding: 12px 32px;
   font-size: 16px;
-  min-width: 200px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .analyticsGradient {
@@ -576,11 +593,12 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+  text-align: left;
 }
 
 @media (min-width: 640px) {
   .dataAnalytics {
-    padding: 64px 32px;
+    padding: 48px 32px;
   }
   
   .analyticsTitle {
@@ -599,7 +617,7 @@
 
 @media (min-width: 1024px) {
   .dataAnalytics {
-    padding: 96px 32px;
+    padding: 48px 32px;
   }
   
   .analyticsHeader {
@@ -627,7 +645,7 @@
 .technology {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 0;
+  padding: 48px 16px;
   position: relative;
   z-index: 1;
 }
@@ -683,7 +701,7 @@
 
 @media (min-width: 640px) {
   .technology {
-    padding: 64px 32px;
+    padding: 48px 32px;
   }
   
   .technologyTitle {
@@ -697,7 +715,7 @@
 
 @media (min-width: 1024px) {
   .technology {
-    padding: 96px 32px;
+    padding: 48px 32px;
   }
   
   .technologyTitle {
@@ -713,7 +731,7 @@
 .footer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 48px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 1;

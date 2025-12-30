@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Data Engineering & Analytics | SwiftCore - Reliable, Secure, and Scalable Data Systems",
+  title: "Data Engineering & Analytics | Exanode - Reliable, Secure, and Scalable Data Systems",
   description: "We build automated and incremental data pipelines that continuously transform raw data from multiple sources. Data Engineering & Analytics for Reliable, Secure, and Scalable Data Systems.",
   keywords: "data engineering, data analytics, data pipelines, data warehouse, data modeling, business intelligence, data transformation",
   openGraph: {
-    title: "Data Engineering & Analytics | SwiftCore",
+    title: "Data Engineering & Analytics | Exanode",
     description: "We build automated and incremental data pipelines that continuously transform raw data from multiple sources.",
     type: "website",
   },
