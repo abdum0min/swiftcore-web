@@ -477,7 +477,7 @@
 
 @media (max-width: 768px) {
   .dataEngineeringButtons {
-    flex-direction: column;
+    flex-direction: column ;
   }
 }
 
