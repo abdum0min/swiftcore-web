@@ -1,0 +1,181 @@
+/* Data Engineering Section */
+.dataEngineering {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.dataEngineering::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(97, 85, 245, 0.25) 0%, transparent 70%);
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dataEngineering::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sectionGradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(75, 20, 240, 0.15) 0%, rgba(53, 20, 240, 0.05) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.sectionContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.sectionDescription {
+  font-size: 18px;
+  color: #d1d5db;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  border-color: rgba(97, 85, 245, 0.5);
+  box-shadow: 0 0 30px rgba(97, 85, 245, 0.2);
+  transform: translateY(-5px);
+}
+
+.cardShadow1 {
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.cardShadow2 {
+  box-shadow: 0px -2px 10px 0px #E9DFFF4D;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.dataEngineeringButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .dataEngineeringButtons {
+    flex-direction: column;
+  }
+}
+
+.dataEngineeringButtons button {
+  padding: 12px 32px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 640px) {
+  .dataEngineering {
+    padding: 48px 32px;
+  }
+  
+  .sectionTitle {
+    font-size: 40px;
+  }
+  
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+  }
+  
+  .dataEngineeringButtons {
+    flex-direction: row;
+  }
+  
+  .dataEngineeringButtons button {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dataEngineering {
+    padding: 48px 32px;
+  }
+  
+  .sectionTitle {
+    font-size: 48px;
+  }
+  
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+  }
+}
+

@@ -1,0 +1,187 @@
+/* Data Analytics Section */
+.dataAnalytics {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.dataAnalytics::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dataAnalytics::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.analyticsGradient {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(75, 20, 240, 0.31) 0%, rgba(53, 20, 240, 0) 100%);
+  pointer-events: none;
+}
+
+.analyticsContent {
+  position: relative;
+  z-index: 10;
+}
+
+.analyticsHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 48px;
+}
+
+.analyticsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.analyticsDescription {
+  flex: 1;
+}
+
+.analyticsDescriptionContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.analyticsArrow {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 80px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .analyticsArrow {
+    display: none;
+  }
+  .analyticsText {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.analyticsText {
+  font-size: 32px;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.processSteps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.processStep {
+  text-align: center;
+}
+
+.processNumber {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 24px;
+  font-weight: 700;
+  background-image: url('/icons/number-bg.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.processStepTitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.processArrow {
+  flex-shrink: 0;
+}
+
+.processStepTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .dataAnalytics {
+    padding: 48px 32px;
+  }
+  
+  .analyticsTitle {
+    font-size: 40px;
+  }
+  
+  .analyticsArrow {
+    width: 100px;
+  }
+  
+  .processSteps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dataAnalytics {
+    padding: 48px 32px;
+  }
+  
+  .analyticsHeader {
+    flex-direction: row;
+  }
+  
+  .analyticsTitle {
+    font-size: 48px;
+  }
+  
+  .analyticsArrow {
+    width: 120px;
+  }
+  
+  .analyticsDescriptionContent {
+    gap: 24px;
+  }
+  
+  .processSteps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
