@@ -1,0 +1,38 @@
+.btnOutline {
+  padding: 8px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btnOutline:hover {
+  background: #ffffff;
+  color: #010208;
+}
+
+.btnPrimary {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 40px;
+  background: #6155F5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btnPrimary:hover {
+  background: #4d42d4;
+}
+
+.btnOutline:disabled,
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
