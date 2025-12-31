@@ -1,0 +1,33 @@
+/* About Page Styles */
+
+.container {
+  background: #010208;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.pageGradient {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(97, 85, 245, 0.25) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .pageGradient {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    right: -50px;
+    filter: blur(60px);
+  }
+}
+
