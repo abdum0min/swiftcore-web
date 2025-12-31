@@ -51,47 +51,72 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .analyticsTitle {
   font-size: 32px;
   font-weight: 700;
-  flex-shrink: 0;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .analyticsDescription {
-  flex: 1;
+  width: 100%;
 }
 
 .analyticsDescriptionContent {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .analyticsArrow {
   flex-shrink: 0;
-  margin-top: 4px;
   width: 80px;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .analyticsArrow {
-    display: none;
-  }
-  .analyticsText {
-    font-size: 24px;
-    text-align: center;
-  }
+  margin-top: 8px;
 }
 
 .analyticsText {
-  font-size: 32px;
+  font-size: 16px;
   color: #d1d5db;
   margin: 0;
+  line-height: 1.6;
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .analyticsHeader {
+    gap: 20px;
+  }
+  
+  .analyticsTitle {
+    font-size: 28px;
+  }
+  
+  .analyticsArrow {
+    display: none;
+  }
+  
+  .analyticsText {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .analyticsDescriptionContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 .processSteps {
@@ -146,12 +171,24 @@
     padding: 48px 32px;
   }
   
+  .analyticsHeader {
+    text-align: left;
+  }
+  
   .analyticsTitle {
-    font-size: 40px;
+    font-size: 36px;
+  }
+  
+  .analyticsText {
+    font-size: 17px;
   }
   
   .analyticsArrow {
     width: 100px;
+  }
+  
+  .analyticsDescriptionContent {
+    justify-content: flex-start;
   }
   
   .processSteps {
@@ -166,10 +203,26 @@
   
   .analyticsHeader {
     flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
   }
   
   .analyticsTitle {
-    font-size: 48px;
+    font-size: 32px;
+    flex: 0 0 auto;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
+  .analyticsDescription {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .analyticsText {
+    font-size: 18px;
+    max-width: 100%;
   }
   
   .analyticsArrow {
@@ -178,6 +231,7 @@
   
   .analyticsDescriptionContent {
     gap: 24px;
+    justify-content: flex-start;
   }
   
   .processSteps {

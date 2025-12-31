@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className={styles.footerColumn}>
             <Link href="/" className={styles.footerLogo}>Exanode</Link>
             <p className={styles.footerDescription}>
-              Transforming data into actionable insights. We build reliable, secure, and scalable data systems.
+              Reliable data. Clear insights. Better decisions.
             </p>
             <div className={styles.socialLinks}>
               <a href="#" className={styles.socialLink} aria-label="LinkedIn">

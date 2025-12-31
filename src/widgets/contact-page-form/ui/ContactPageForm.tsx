@@ -61,7 +61,7 @@ export const ContactPageForm = () => {
         <div className={styles.formHeader}>
           <h2 className={styles.formTitle}>Send us a Message</h2>
           <p className={styles.formDescription}>
-            Fill out the form below and we'll get back to you as soon as possible.
+            Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
 

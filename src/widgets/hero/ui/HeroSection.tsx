@@ -6,14 +6,14 @@ export const HeroSection = () => {
   return (
     <section id="home" className={styles.hero}>
       <h1 className={styles.heroTitle}>
-        Data Engineering & Analytics for Reliable, Secure, and Scalable Data Systems
+        Turn Your Data Into a Competitive Advantage
       </h1>
       <p className={styles.heroDescription}>
-        We build automated and incremental data pipelines that continuously transform raw data from multiple sources.
+        We design and implement automated, scalable data pipelines that transform raw information into reliable insights—so you can make faster, smarter decisions.
       </p>
       <div className={styles.heroButtons}>
-        <Button variant="outline">Get free consultation</Button>
-        <Button variant="primary">Contact us</Button>
+        <Button variant="outline">Schedule a Free Consultation</Button>
+        <Button variant="primary">See Our Work</Button>
       </div>
     </section>
   )

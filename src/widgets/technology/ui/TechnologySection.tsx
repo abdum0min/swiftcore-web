@@ -5,7 +5,10 @@ import styles from './TechnologySection.module.css'
 export const TechnologySection = () => {
   return (
     <section className={styles.technology}>
-      <h2 className={styles.technologyTitle}>The technology at our disposal</h2>
+      <h2 className={styles.technologyTitle}>Built on Platforms You Can Trust</h2>
+      <p className={styles.technologyDescription}>
+        We work with industry-leading technologies to build solutions that are reliable, scalable, and supported for the long term.
+      </p>
       <div className={styles.technologyGrid}>
         {/* Microsoft */}
         <div className={styles.techItem}>

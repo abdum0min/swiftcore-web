@@ -10,34 +10,19 @@ interface Solution {
 
 const solutions: Solution[] = [
   {
-    icon: 'mdi:database-sync',
-    title: 'Scalable Data Infrastructure',
-    description: 'We design and implement data architectures that grow with your business, ensuring high performance and reliability at any scale.'
-  },
-  {
     icon: 'mdi:shield-check',
-    title: 'Enterprise Security',
-    description: 'Your data security is our priority. We implement industry-leading security practices and compliance standards.'
+    title: 'Reliability First',
+    description: 'We design for failure—because systems fail. Our pipelines include monitoring, alerting, retry logic, and graceful degradation so your data keeps flowing.'
   },
   {
     icon: 'mdi:chart-line',
-    title: 'Advanced Analytics',
-    description: 'Transform raw data into actionable insights with our comprehensive analytics solutions and reporting tools.'
+    title: 'Built to Scale',
+    description: 'Whether you&apos;re processing gigabytes or petabytes, our architectures grow with your business without requiring costly re-platforming.'
   },
   {
-    icon: 'mdi:cloud-check',
-    title: 'Cloud-Native Solutions',
-    description: 'Leverage the power of cloud computing with our optimized cloud-native data engineering solutions.'
-  },
-  {
-    icon: 'mdi:robot',
-    title: 'Automated Pipelines',
-    description: 'Reduce manual work and increase efficiency with our automated data pipeline solutions.'
-  },
-  {
-    icon: 'mdi:lightning-bolt',
-    title: 'Real-Time Processing',
-    description: 'Get instant insights with our real-time data processing and streaming capabilities.'
+    icon: 'mdi:school',
+    title: 'Knowledge Transfer',
+    description: 'We don&apos;t just build and leave. We document everything, train your teams, and ensure you can maintain and extend what we deliver.'
   }
 ]
 
@@ -46,9 +31,9 @@ export const SolutionsSection = () => {
     <section className={styles.solutions}>
       <div className={styles.solutionsContent}>
         <div className={styles.solutionsHeader}>
-          <h2 className={styles.solutionsTitle}>Our Solutions</h2>
+          <h2 className={styles.solutionsTitle}>Data Engineering, Done Right</h2>
           <p className={styles.solutionsDescription}>
-            We provide comprehensive data engineering and analytics solutions tailored to your business needs.
+            Our approach is built on three core principles that ensure your data infrastructure delivers real business value.
           </p>
         </div>
 

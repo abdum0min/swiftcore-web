@@ -8,12 +8,12 @@ export const DataAnalyticsSection = () => {
       <div className={styles.analyticsGradient}></div>
       <div className={styles.analyticsContent}>
         <div className={styles.analyticsHeader}>
-          <h2 className={styles.analyticsTitle}>Data Analytics</h2>
+          <h2 className={styles.analyticsTitle}>From Raw Data to Clear Answers</h2>
           <div className={styles.analyticsDescription}>
             <div className={styles.analyticsDescriptionContent}>
               <Image src="/icons/arrow-long.svg" alt="arrow" width={120} height={27} className={styles.analyticsArrow} />
               <p className={styles.analyticsText}>
-                We transform raw data into actionable insights through a structured analytics process.
+                Data without context is just noise. We help you cut through the complexity with analytics solutions that answer real business questions—delivered through dashboards your teams will actually use.
               </p>
             </div>
           </div>
@@ -25,7 +25,7 @@ export const DataAnalyticsSection = () => {
             <div className={styles.processNumber}>01</div>
             <div className={styles.processStepTitleWrapper}>
               <Image src="/icons/arrow.svg" alt="arrow" width={20} height={17} className={styles.processArrow} />
-              <h3 className={styles.processStepTitle}>Data Discovery & Requirements</h3>
+              <h3 className={styles.processStepTitle}>Discovery & Requirements</h3>
             </div>
           </div>
           <div className={styles.processStep}>
@@ -39,14 +39,14 @@ export const DataAnalyticsSection = () => {
             <div className={styles.processNumber}>03</div>
             <div className={styles.processStepTitleWrapper}>
               <Image src="/icons/arrow.svg" alt="arrow" width={20} height={17} className={styles.processArrow} />
-              <h3 className={styles.processStepTitle}>Analytics & Insights</h3>
+              <h3 className={styles.processStepTitle}>Analysis & Insights</h3>
             </div>
           </div>
           <div className={styles.processStep}>
             <div className={styles.processNumber}>04</div>
             <div className={styles.processStepTitleWrapper}>
               <Image src="/icons/arrow.svg" alt="arrow" width={20} height={17} className={styles.processArrow} />
-              <h3 className={styles.processStepTitle}>Visualization & Reporting</h3>
+              <h3 className={styles.processStepTitle}>Visualization & Delivery</h3>
             </div>
           </div>
         </div>
