@@ -1,0 +1,85 @@
+/* Contact Hero Section */
+.contactHero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contactHero::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(97, 85, 245, 0.25) 0%, transparent 70%);
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.contactHero::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.heroDescription {
+  font-size: 18px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .contactHero {
+    padding: 64px 32px;
+  }
+  
+  .heroTitle {
+    font-size: 48px;
+  }
+  
+  .heroDescription {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactHero {
+    padding: 96px 32px;
+  }
+  
+  .heroTitle {
+    font-size: 64px;
+  }
+  
+  .heroDescription {
+    font-size: 22px;
+  }
+}
+

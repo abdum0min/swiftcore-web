@@ -1,0 +1,2 @@
+export { ContactInfo } from './ui/ContactInfo'
+

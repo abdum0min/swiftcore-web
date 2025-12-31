@@ -1,0 +1,111 @@
+/* Contact Info Section */
+.contactInfo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.contactInfo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(97, 85, 245, 0.25) 0%, transparent 70%);
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.contactInfo::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.infoCard:hover {
+  border-color: rgba(97, 85, 245, 0.5);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(97, 85, 245, 0.2);
+  transform: translateY(-5px);
+}
+
+.infoIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(97, 85, 245, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.infoTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.infoContent {
+  font-size: 16px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.infoContent:hover {
+  color: #6155F5;
+}
+
+@media (min-width: 640px) {
+  .contactInfo {
+    padding: 48px 32px;
+  }
+  
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactInfo {
+    padding: 48px 32px;
+  }
+  
+  .infoGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
